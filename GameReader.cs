@@ -33,7 +33,6 @@ namespace NFLModel
             var line = reader.ReadLine();
             while (line != null)
             {
-                Console.WriteLine(line);
                 var values = line.Split(',');
                 
                 // Home Team, Home Pts, Home Yards, Home TOs, Away Team, Away Pts, Away Yards, Away TOs

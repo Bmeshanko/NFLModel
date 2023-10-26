@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 
-public class Program
+public class Training
 {
-    public static void Main()
+    public static void Go()
     {
         List<Team> Teams = TeamReader.Go("../../../teams.txt");
 
@@ -12,8 +12,8 @@ public class Program
 
         List<Game> Games = Reader.Go("../../../nfl.csv");
 
-        TeamAnalyzer Analyzer = new TeamAnalyzer(Teams);
+        DataCleanser Cleanser = new DataCleanser(Games);
 
-        Training.Go();
+        Cleanser.Go("../../../data.txt");
     }
 }

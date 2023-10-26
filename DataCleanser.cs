@@ -29,6 +29,8 @@ namespace NFLModel
                     + game.HomePts + "," + game.HomeYds + "," + game.HomeTOs;
                 writer.WriteLine(str2);
             }
+
+            writer.Close();
         }
     }
 }
