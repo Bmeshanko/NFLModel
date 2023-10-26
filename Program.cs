@@ -12,8 +12,7 @@ public class Program
 
         List<Game> Games = Reader.Go("../../../nfl.csv");
 
-        TeamAnalyzer Analyzer = new TeamAnalyzer(Teams);
-
-        Training.Go();
+        // Only needed once
+        //Training.Go();
     }
 }
