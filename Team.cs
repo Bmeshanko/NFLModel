@@ -9,6 +9,7 @@ namespace NFLModel
         public string Name { get; set; }
         public List<Game> Games { get; set; }
 
+        // Points, Yards, Turnovers
         public List<float> OffensiveAverages { get; set; }
         public List<float> DefensiveAverages { get; set; }
 
